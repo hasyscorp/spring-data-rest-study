@@ -1,0 +1,24 @@
+# shop 생성
+POST http://localhost:8080/shops
+Content-Type: application/json
+
+{
+  "name": "shop1",
+  "branchName": "branch1",
+  "hiddenString": "****"
+}
+
+###
+GET http://localhost:8080/shops
+
+###
+GET http://localhost:8080/shops/1
+
+###
+PATCH http://localhost:8080/shops/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "shop2"
+}

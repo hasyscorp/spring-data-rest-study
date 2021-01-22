@@ -1,0 +1,24 @@
+# shop 생성
+POST http://localhost:8080/stylers
+Content-Type: application/json
+
+{
+  "name": "styler1",
+  "hiddenString": "*******",
+  "shop": "http://localhost:8080/shops/1"
+}
+
+###
+GET http://localhost:8080/stylers
+
+###
+GET http://localhost:8080/stylers/1
+
+###
+PATCH http://localhost:8080/stylers/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "styler2"
+}
