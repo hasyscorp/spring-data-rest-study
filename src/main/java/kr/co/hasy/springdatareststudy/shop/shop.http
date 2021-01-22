@@ -19,6 +19,5 @@ PATCH http://localhost:8080/shops/1
 Content-Type: application/json
 
 {
-  "id": 1,
   "name": "shop2"
 }
