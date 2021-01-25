@@ -33,3 +33,9 @@ http://localhost:8080/shops?page=1&size=2
 
 ### sort
 http://localhost:8080/shops?page=0&size=5&sort=name,desc
+
+### projection
+http://localhost:8080/shops?projection=shopResponse
+
+### projection
+http://localhost:8080/shops/1?projection=shopResponse
