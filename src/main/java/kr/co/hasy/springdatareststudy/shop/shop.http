@@ -21,3 +21,9 @@ Content-Type: application/json
 {
   "name": "shop2"
 }
+
+### @RestResource(path = "name")
+GET http://localhost:8080/shops/search/name?name=shop1
+
+### @RestResource(path = "branchName")
+GET http://localhost:8080/shops/search/branchName?branchName=branch1
