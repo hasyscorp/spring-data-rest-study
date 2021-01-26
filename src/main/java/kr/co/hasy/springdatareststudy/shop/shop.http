@@ -39,3 +39,7 @@ http://localhost:8080/shops?projection=shopResponse
 
 ### projection
 http://localhost:8080/shops/1?projection=shopResponse
+
+### custom
+###
+GET http://localhost:8080/shops/custom/1

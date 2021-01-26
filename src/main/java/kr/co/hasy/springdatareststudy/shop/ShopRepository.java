@@ -1,10 +1,12 @@
 package kr.co.hasy.springdatareststudy.shop;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
+@RepositoryRestResource
 public interface ShopRepository extends PagingAndSortingRepository<Shop, Long> {
     @RestResource(path = "name")
     List<Shop> findAllByName(String name);
